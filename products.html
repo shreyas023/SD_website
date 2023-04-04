@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YourOutfit | Ecommerce website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="head" style="background-color: black;">
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html" style="color:white;"> YourOutfit </a>
+			</div>
+			<div class="form">
+			
+      					<input type="text" placeholder="Search.." name="search">
+      					<button type="submit"><i class="fa fa-search"></i></button>
+   						<i class="fa fa-microphone" style="font-size:24px;color:white"></i>
+   					
+   			</div>
+			<nav>
+				<ul id="MenuItems">
+					
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="chatbot.html">Contact</a></li>
+					<li><a href="account.html">Account</a></li>
+					<li>
+						<select>
+							<option>Categories</option>
+							<option>Men's Wear</option>
+							<option>Women's Wear</option>
+							<option>Kid's Wear</option>
+							<option>Autumn Winter 2022</option>
+						</select>
+					</li>
+
+				</ul>
+			</nav>
+			<a href="cart.html">
+			<i class="fa fa-shopping-cart" style="font-size:29px;color:white"></i>
+			</a>
+			<img src="menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+		
+	</div>
+	</div>
+
+	
+
+	<!---------featured----------->
+	<div class="small-container">
+		<div class="row row-2">
+			<h2>All products</h2>
+			<select>
+				<option>Default sorting</option>
+				<option>Sort by price</option>
+				<option>Sort by popularity</option>
+				<option>Sort by rating</option>
+				<option>Sort by sale</option>
+
+			</select>
+		</div>
+
+
+		<div class="row">
+			<div class="col-4">
+				<img src="louis.jpg" height="330px">
+				<h4>Louis Philippe Men's Shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 1869.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="raymond.jpg" height="330px">
+				<h4>Raymond Navy 3 piece suit</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 3199.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="adidasw.jpg" height="330px">
+				<h4>Sweatshirt for women Adidas</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 799.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="levisM.jpg" height="330px">
+				<h4>Levis T-Shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 949.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<a href="productdetails.html"><img src="product-1.jpg"></a>
+				<a href="productdetails.html"><h4>Puma T-Shirt</h4></a>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 999.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="jeans.jpg" height="330px">
+				<h4>Van Huesen jeans for ladies</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 1449.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="allensolly.jpg" height="330px">
+				<h4>White Shirt by Allen Solly</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 1399.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="kurti.jpg" height="330px">
+				<h4>Biba Collection</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 1199.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<img src="jack.jpg" height="330px">
+				<h4>Jack and Jones T-Shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 750.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="niket.jpg" height="330px">
+				<h4>Nike Running dri-fit track pant</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 849.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="blackkurta.jpg" height="330px">
+				<h4>Men black kurta with pyjamas</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>₹ 1999.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="product-6.jpg">
+				<h4>Puma New-edition</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 899.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page-btn">
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>&#8594;</span>
+		</div>
+
+	</div>
+
+	
+
+	
+	<!--------footer---------->	
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-7">
+					<h3>Download our App</h3>
+					<p>Available for Android and iOS</p>
+					<div class="app-logo">
+						<img src="app1.png">
+						<img src="app2.png" style="padding-bottom: 7px;">
+					</div>
+				</div>
+				<div class="col-8">
+					<a href="" style="color:white;">YourOutfit</a>
+					<p>	
+						Our Purpose is to provide maximum accessibility and usability to our visitors.
+					</p>
+				</div>
+				<div class="col-9">
+					<h3>Useful links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog post</li>
+						<li>Return Policy</li>
+						<li>Join affiliate</li>
+					</ul>
+				</div>
+				<div class="col-10">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Twitter</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">
+				Copyright 2022 - YourOutfit Inc.
+			</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		var MenuItems=document.getElementById("MenuItems");
+		
+		MenuItems.style.maxHeight="0px";
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeight=="0px")
+			{
+				MenuItems.style.maxHeight="200px";
+			}
+			else
+			{
+				MenuItems.style.maxHeight="0px";
+			}
+		}
+	</script>
+
+</body>
+</html>
+
+
+
+
+<img src="">

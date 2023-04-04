@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YourOutfit | Ecommerce website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="chat.css">
+
+</head>
+
+<body>
+	<div class="head" style="background-color: black;">
+		<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html" style="color:white;"> YourOutfit </a>
+			</div>
+			<div class="form">
+			
+      					<input type="text" placeholder="Search.." name="search">
+      					<button type="submit"><i class="fa fa-search"></i></button>
+   						<i class="fa fa-microphone" style="font-size:24px;color:white"></i>
+   					
+   			</div>	
+			<nav>
+				<ul id="MenuItems">
+					
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="chatbot.html">Contact</a></li>
+					<li><a href="account.html">Account</a></li>
+					<li>
+						<select>
+							<option>Categories</option>
+							<option>Men's Wear</option>
+							<option>Women's Wear</option>
+							<option>Kid's Wear</option>
+							<option>Autumn Winter 2022</option>
+						</select>
+					</li>
+
+				</ul>
+			</nav>
+			<a href="cart.html">
+			<i class="fa fa-shopping-cart" style="font-size:29px;color:white"></i>
+			</a>
+			<img src="menu.png" class="menu-icon" onclick="menutoggle()">
+			</div>
+		</div>
+	</div>
+
+	<!-----------chatbot------------>
+	
+	<div class="account-page">
+		<div class="container">
+			<div class="row">
+				<div class="new">
+					<div class="form-container1">
+						<div>
+							<div style="font-size: 25px; font-style: bold; height: 78px;color: #ff523b;display: inline-block;" >FAQs</div>
+							
+						</div>
+
+						<div class="faqs">
+						
+						<input list="select" placeholder="1. Does your credential get locked ?" style="width: 386px;height: 30px;">
+						<datalist id="select">
+						<option>
+						 Click on the link 'Forgot Password ?' to get your credential back. It will sent an OTP to your registered mobile number and link for changing password. After changing password, login to get access to your credential.    
+						</option>
+						</datalist>
+						
+						<input list="select1" placeholder="2. Isn't OTP generated during payment?" style="width: 386px;height: 30px;">
+						<datalist id="select1">
+						
+						<option>
+						  If OTP is not generated during payment process, stop processing payment there itself and retry with the new process of payment. If problem continues, kindly check your internet connection.
+						</option>
+						</datalist>
+						
+						<input list="select2" placeholder="3. Do you get an irrelevant product ?" style="width: 386px;height: 30px;">
+						<datalist id="select2">
+						
+						<option>
+						    Nothing to worry, you can return or exchange the product you don't want. Also, you can contact our customer care for assistance.
+						</option>
+						</datalist>
+						
+						<input list="select3" placeholder="4. Don't your product return/exchange?" style="width: 386px;height: 30px;">
+						<datalist id="select3">
+						
+						<option>
+						    Return or exchange of product usually take place within 1 business day. Kindly contact customer care if return or exchange of product do not take place on time.
+						</option>
+						</datalist>
+						
+						<input list="select4" placeholder="5. Don't you receive refund from us ?" style="width: 386px;height: 30px;">
+						<datalist id="select4">
+						
+						<option>
+						    Refund will be received after 1 business day. Kindly ensure your internet connectivity and you will be notified when payment get received.
+						</option>
+						</datalist>
+						
+						</div>
+						<div class="faqs" style="padding-top: 50px;">
+							<div style="display: flex; color: #6f6f6f;font-weight: bold;font-size: 20px;">Contact us</div>
+							<div class="faq" style="display : flex; align-items : center;padding-top: 10px;"><div><i class="fa fa-envelope" style="font-size:20px;color: #6f6f6f"></i></div>&nbsp; <a href="" style="color:black;text-decoration: underline;">customer.care@youroutfit.com</a></div>
+							<div class="faq" style="display : flex; align-items : center;padding-top: 10px;"><div><i class="fa fa-mobile-phone" style="font-size:36px;color: #6f6f6f;width: 20px"></i></div>&nbsp; <a href="" style="color:black;text-decoration: underline;">+91 97848 65153</a></div>
+							<div class="faq" style="display : flex; align-items : center;padding-top: 10px;"><div><i class="fa fa-phone" style="font-size:24px;color: #6f6f6f;width: 20px"></i></div>&nbsp; <a href="" style="color:black;text-decoration: underline;">022 8465 2968</a></div>
+
+						</div>
+					</div>
+					</div>
+
+
+	<div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+</div>
+
+
+	<!-------footer------------->
+		<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-7">
+					<h3>Download our App</h3>
+					<p>Available for Android and iOS</p>
+					<div class="app-logo">
+						<img src="app1.png">
+						<img src="app2.png" style="padding-bottom: 7px;">
+					</div>
+				</div>
+				<div class="col-8">
+					<a href="" style="color:white;">YourOutfit</a>
+					<p>	
+						Our Purpose is to provide maximum accessibility and usability to our visitors.
+					</p>
+				</div>
+				<div class="col-9">
+					<h3>Useful links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog post</li>
+						<li>Return Policy</li>
+						<li>Join affiliate</li>
+					</ul>
+				</div>
+				<div class="col-10">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Twitter</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">
+				Copyright 2022 - YourOutfit Inc.
+			</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		var MenuItems=document.getElementById("MenuItems");
+		
+		MenuItems.style.maxHeight="0px";
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeight=="0px")
+			{
+				MenuItems.style.maxHeight="200px";
+			}
+			else
+			{
+				MenuItems.style.maxHeight="0px";
+			}
+		}
+
+	</script>
+	<script type="text/javascript">
+		var LoginForm = document.getElementById("LoginForm1");
+		var RegForm = document.getElementById("RegForm");
+		var Indicator = document.getElementById("Indicator1");
+
+			function register() {
+				
+				RegForm.style.transform = "translateX(0px)";
+				LoginForm.style.transform = "translateX(0px)"
+				Indicator.style.transform = "translateX(133px)"
+			}
+			function login() {
+				
+				RegForm.style.transform = "translateX(400px)";
+				LoginForm.style.transform = "translateX(400px)"
+				Indicator.style.transform = "translateX(10px)"
+			}
+
+			
+						
+	</script>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="responses.js"></script>
+<script src="chat.js"></script>
+</html>

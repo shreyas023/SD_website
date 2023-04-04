@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YourOutfit | Ecommerce website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="head" style="background-color: black;">
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html" style="color:white;"> YourOutfit </a>
+			</div>
+			
+			<div class="form">
+			
+      					<input type="text" placeholder="Search.." name="search">
+      					<button type="submit"><i class="fa fa-search"></i></button>
+   						<i class="fa fa-microphone" style="font-size:24px;color:white"></i>
+   					
+   			</div>	
+			<nav>
+				<ul id="MenuItems">
+					
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="chatbot.html">Contact</a></li>
+					<li><a href="account.html">Account</a></li>
+					<li>
+						<select>
+							<option>Categories</option>
+							<option>Men's Wear</option>
+							<option>Women's Wear</option>
+							<option>Kid's Wear</option>
+							<option>Autumn Winter 2022</option>
+						</select>
+					</li>
+
+				</ul>
+			</nav>
+			<a href="cart.html">
+			<i class="fa fa-shopping-cart" style="font-size:29px;color:white"></i>
+			</a>
+			<img src="menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+		
+	</div>
+	</div>
+</div>
+
+<!----------product details----------->	
+
+	<div class="small-container single-product">
+		<div class="row">
+			<div class="new">
+				<img src="gallery-1.jpg" width="100%" id="ProductImg">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="gallery-1.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="gallery-2.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="gallery-3.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="gallery-4.jpg" width="100%" class="small-img">
+					</div>
+				</div>	
+
+
+
+			</div>
+			<div class="new">
+				<p>Home / T-Shirt</p>
+				<h1>Puma T-Shirt</h1>
+				<h4>₹ 999.0</h4>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+				<select>
+					<option>Select Size</option>
+					<option>XXL</option>
+					<option>XL</option>
+					<option>L</option>
+					<option>M</option>
+					<option>S</option>
+				</select>
+				<input type="number" value="1">
+				<a href="cart.html" class="btn">Add To Cart</a>
+				<a href="account.html" class="btn">Buy now</a>
+
+				<h3>Product details<i class="fa fa-indent"></i></h3>
+				<br>
+				<p>These stylish sports t-shirts are crafted to sync with all casual styles and appearances and become your go-to option for travel, outings, and semi-formal occasions. They bring functionality and fashion together without compromising comfort or quality.</p>
+			</div>
+		</div>
+
+
+
+	<!---------title-------------->
+
+	<div class="small-container">
+		<div class="row row-2">
+			<h2>Related Products</h2>
+			<a href="products.html" style="color:black;text-decoration: underline;">View more</a>
+		</div>
+	</div>
+
+	<!----------products---------->
+
+	<div class="small-container">
+
+		<div class="row">
+			<div class="col-4">
+				<img src="louis.jpg" height="330px">
+				<h4>Louis Philippe Men's Shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 1869.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="jeans.jpg" height="330px">
+				<h4>Van Huesen jeans for ladies</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 1449.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="allensolly.jpg" height="330px">
+				<h4>White Shirt by Allen Solly</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 1399.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="kurti.jpg" height="330px">
+				<h4>Biba Collection</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</div>
+				<p>₹ 1199.0</p>
+				<div style="display :flex;justify-content: space-between;align-items: center;">
+					<p>Free delivery </p>
+					<div style="display :flex;justify-content: flex-end;align-items: center;">
+					<img src="trustmark.png" style="height :40px;width: 35px;">
+					<p style="font-family: animo;font-size: 16px;color: #ff523b;font-style: bold;">trusted</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!------------------review----------------->
+
+			<div class="row">
+				<div class="review1">
+					<h3 style="text-align: center;background-color: #ff523b;color: #fff;">Reviews</h3>
+				</div>
+				<div class="review">
+				<div>
+					<h2 style="margin: 10px 0;">Suresh M
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</h2>
+				</div>
+				<div>xyz</div>
+				</div>
+				<div class="review">
+					<h4 style="margin :5px 0;">Great tshirts, GREAT service!</h4>
+					<small>September 8th, 2022</small>
+				</div>
+				<div class="review" style="margin :10px 0;">
+					<p>Can't say enough positive things about YourOutfit support! Even just via email, they were responsive, professional, clearly REAL human beings, and generously applied a discount code I received post-purchase as a refund, with zero hassle. Of course, the shirts themselves are a fantastic value. High quality cotton with a flattering fit for husky lads like me. Great tshirts, great service! Thanks!</p><br>
+				</div>	
+				<div class="review">
+					<h4 style="margin:0;">Products used :</h4>
+					<small>Puma T-Shirt L size</small>
+				</div>	
+		</div>
+		<h4>Like<i class="fa fa-heart-o"></i>&nbsp;&nbsp;Comments<i class="fa fa-comments-o"></i>&nbsp;&nbsp;Report<i class="fa fa-flag-o"></i></h4>
+		<hr>
+		<div class="row">
+				
+				<div class="review">	
+					<h2 style="margin: 10px 0;">Vinit C
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+				</h2>
+				</div>
+				<div class="review">
+					<h4 style="margin :5px 0;">Amazing Customer Service!</h4>
+					<small>May 26th, 2022</small>
+				</div>
+				<div class="review" style="margin :10px 0;">
+					<p>The team at YourOutfit is great to work with! I had a situation that made a return/exchange complicated and the entire team helped to get everything straightened out! And when one of the items I wanted to exchange was no longer available, they gave me the option to choose which item I would like in its place. Seriously AWESOME customer service and the tshirts are great! I feel more confident than ever and actually comfortable in my clothes. Thanks YourOutfit!</p><br>
+				</div>	
+				<div class="review">
+					<h4 style="margin:0;">Products used :</h4>
+					<small>Puma T-Shirt XL size</small>
+				</div>	
+		</div>
+		<h4>Like<i class="fa fa-heart-o"></i>&nbsp;&nbsp;Comments<i class="fa fa-comments-o"></i>&nbsp;&nbsp;Report<i class="fa fa-flag-o"></i></h4>
+		<hr>
+		<div class="row">
+				
+				<div class="review">	
+					<h2 style="margin: 10px 0;">Akshay B
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				</h2>
+				</div>
+				<div class="review">
+					<h4 style="margin :5px 0;">Amazing products and amazing customer service!</h4>
+					<small>July 13th, 2022</small>
+				</div>
+				<div class="review" style="margin :5px 0;">
+					<p>I purchased a set of tshirts for my father and had a minor issue with only one of the tshirt fitting a little bigger than the rest. I contacted customer service and received exceptional customer service immediately and they resolved the situation within 24 hours. I was so impressed with both the quality of the shirts but also their kindness and customer service. I will continue to support them. Can't wait to purchase more things for the men in my family! :)</p><br>
+				</div>	
+				<div class="review">
+					<h4 style="margin:0;">Products used :</h4>
+					<small>Puma T-Shirt L size</small>
+				</div>	
+		</div>
+		<h4>Like<i class="fa fa-heart-o"></i>&nbsp;&nbsp;Comments<i class="fa fa-comments-o"></i>&nbsp;&nbsp;Report<i class="fa fa-flag-o"></i></h4>
+		<hr>
+		<br>
+		<a href="" style="color:black;text-decoration: underline;padding: 10px 0;">View more reviews</a>
+	</div>
+
+	
+	<!--------footer---------->	
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-7">
+					<h3>Download our App</h3>
+					<p>Available for Android and iOS</p>
+					<div class="app-logo">
+						<img src="app1.png">
+						<img src="app2.png" style="padding-bottom: 7px;">
+					</div>
+				</div>
+				<div class="col-8">
+					<a href="" style="color:white;">YourOutfit</a>
+					<p>	
+						Our Purpose is to provide maximum accessibility and usability to our visitors.
+					</p>
+				</div>
+				<div class="col-9">
+					<h3>Useful links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog post</li>
+						<li>Return Policy</li>
+						<li>Join affiliate</li>
+					</ul>
+				</div>
+				<div class="col-10">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Twitter</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">
+				Copyright 2022 - YourOutfit Inc.
+			</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		var MenuItems=document.getElementById("MenuItems");
+		
+		MenuItems.style.maxHeight="0px";
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeight=="0px")
+			{
+				MenuItems.style.maxHeight="200px";
+			}
+			else
+			{
+				MenuItems.style.maxHeight="0px";
+			}
+		}
+	</script>
+
+	<!-------------js for product gallery---->
+	<script type="text/javascript">
+
+		var ProductImg = document.getElementById("ProductImg");
+		var SmallImg = document.getElementsByClassName("small-img")
+
+			SmallImg[0].onmouseover = function()
+			{
+				ProductImg.src = SmallImg[0].src
+			}
+			SmallImg[1].onmouseover = function()
+			{
+				ProductImg.src = SmallImg[1].src
+			}
+			SmallImg[2].onmouseover = function()
+			{
+				ProductImg.src = SmallImg[2].src
+			}
+			SmallImg[3].onmouseover = function()
+			{
+				ProductImg.src = SmallImg[3].src
+			}
+
+	</script>
+
+</body>
+</html>
+

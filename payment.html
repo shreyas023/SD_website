@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YourOutfit | Ecommerce website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="chat.css">
+
+</head>
+
+<body>
+	<div class="head" style="background-color: black;">
+		<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html" style="color:white;"> YourOutfit </a>
+			</div>
+			<div class="form">
+			
+      					<input type="text" placeholder="Search.." name="search">
+      					<button type="submit"><i class="fa fa-search"></i></button>
+   						<i class="fa fa-microphone" style="font-size:24px;color:white"></i>
+   					
+   			</div>	
+			<nav>
+				<ul id="MenuItems">
+					
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="chatbot.html">Contact</a></li>
+					<li><a href="account.html">Account</a></li>
+					<li>
+						<select>
+							<option>Categories</option>
+							<option>Men's Wear</option>
+							<option>Women's Wear</option>
+							<option>Kid's Wear</option>
+							<option>Autumn Winter 2022</option>
+						</select>
+					</li>
+
+				</ul>
+			</nav>
+			<a href="cart.html">
+			<i class="fa fa-shopping-cart" style="font-size:29px;color:white"></i>
+			</a>
+			<img src="menu.png" class="menu-icon" onclick="menutoggle()">
+			</div>
+		</div>
+	</div>
+	<!-------------------payment----------------->
+
+<div class="account-page1">
+<div class="container1">
+
+    <form action="">
+
+        <div class="row" style="background: radial-gradient(#fff,#E6E5E5);">
+
+        	<div class="heading">
+        	<h3 class="title">shipping address</h3>
+        	<h3 class="title">payment</h3>
+        	</div>
+
+            <div class="col">
+
+                
+
+                <div class="inputBox">
+
+                    <span>Name :</span>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="inputBox">
+                    <span>Phone number :</span>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="inputBox">
+                    <span>House no./ Building name :</span>
+                    <input type="text" placeholder="room - street - locality">
+                </div>
+                <div class="inputBox">
+                    <span>Road name/ Area/ Colony :</span>
+                    <input type="text" placeholder="sector">
+                </div>
+                <div class="inputBox">
+                    <span>City :</span>
+                    <input type="text" placeholder="Kharghar">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>State :</span>
+                        <input type="text" placeholder="Maharashtra">
+                    </div>
+                    <div class="inputBox">
+                        <span>Pin code :</span>
+                        <input type="text" placeholder="410 210">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                
+            	
+                <div class="inputBox">
+     
+                    <img src="card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                	<div style="display: flex;align-items: center;"><input type="radio" style="height: 15px; width: 15px;margin-right: 5px;">
+                    <span style="margin: 5px 0;">Credit/Debit Card :</span>
+                    </div>
+                    <input type="text" placeholder="Enter Card number">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Name on Card">
+                </div>
+                <span>Card expiry :</span>
+                <div class="flex">
+                	<div class="inputBox">
+                    
+                    <input type="month" placeholder="exp month">
+                </div>
+                    <div class="inputBox">
+                        
+                        <input type="text" placeholder="CVV">
+                    </div>
+                 </div>
+                 <div class="inputBox">
+                 	<div style="display: flex;align-items: center;"><input type="radio" style="height: 15px; width: 15px;margin-right: 5px;">
+                    <span style="margin: 5px 0;">Net Banking :</span>
+                </div>
+                    <input list="select" placeholder="Select bank">
+                    <datalist id="select">
+                    	<option>HDFC Bank</option>
+                    	<option>State Bank of India</option>
+                    	<option>ICICI Bank</option>
+                    	<option>Bank of Baroda</option>
+                    	<option>Axis Bank</option>
+                    	<option>Saraswat Bank</option>
+                    	<option>Abhyudaya Bank</option>
+                    	<option>Bank of Maharashtra</option>
+                    	<option>Canada Bank</option>
+                    </datalist>
+                </div>
+                <div class="inputBox">
+                	<div style="display: flex;align-items: center;"><input type="radio" style="height: 15px; width: 15px;margin-right: 5px;">
+                    <span style="margin: 5px 0;">UPI :</span>
+                </div>
+                    <input type="text" placeholder="Enter your UPI ID">
+                </div>
+                <div class="inputBox">
+                	<div style="display: flex;align-items: center;"><input type="radio" style="height: 15px; width: 15px;margin-right: 5px;">
+                    <span style="margin: 5px 0;">Cash on Delivery </span>
+                </div>
+       
+                </div>
+
+            </div>
+            
+    		<button class="submit-btn"><a href="index.html">Place Order</a></button>
+    		
+        </div>
+
+        
+
+    </form>
+
+</div> 
+</div>
+
+
+	<!-------footer------------->
+		<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-7">
+					<h3>Download our App</h3>
+					<p>Available for Android and iOS</p>
+					<div class="app-logo">
+						<img src="app1.png">
+						<img src="app2.png" style="padding-bottom: 7px;">
+					</div>
+				</div>
+				<div class="col-8">
+					<a href="" style="color:white;">YourOutfit</a>
+					<p>	
+						Our Purpose is to provide maximum accessibility and usability to our visitors.
+					</p>
+				</div>
+				<div class="col-9">
+					<h3>Useful links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog post</li>
+						<li>Return Policy</li>
+						<li>Join affiliate</li>
+					</ul>
+				</div>
+				<div class="col-10">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Twitter</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">
+				Copyright 2022 - YourOutfit Inc.
+			</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		var MenuItems=document.getElementById("MenuItems");
+		
+		MenuItems.style.maxHeight="0px";
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeight=="0px")
+			{
+				MenuItems.style.maxHeight="200px";
+			}
+			else
+			{
+				MenuItems.style.maxHeight="0px";
+			}
+		}
+
+	</script>
+</body>
+</html>

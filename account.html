@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YourOutfit | Ecommerce website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="head" style="background-color: black;">
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html" style="color:white;"> YourOutfit </a>
+			</div>
+			<div class="form">
+			
+      					<input type="text" placeholder="Search.." name="search">
+      					<button type="submit"><i class="fa fa-search"></i></button>
+   						<i class="fa fa-microphone" style="font-size:24px;color:white"></i>
+   					
+   			</div>
+			<nav>
+				<ul id="MenuItems">
+					
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="chatbot.html">Contact</a></li>
+					<li><a href="account.html">Account</a></li>
+					<li>
+						<select>
+							<option>Categories</option>
+							<option>Men's Wear</option>
+							<option>Women's Wear</option>
+							<option>Kid's Wear</option>
+							<option>Autumn Winter 2022</option>
+						</select>
+					</li>
+
+				</ul>
+			</nav>
+			<a href="cart.html">
+			<i class="fa fa-shopping-cart" style="font-size:29px;color:white"></i>
+			</a>
+			<img src="menu.png" class="menu-icon" onclick="menutoggle()">
+		</div>
+		
+	</div>
+	</div>
+
+<!-----------account page-------------->
+	
+	<div class="account-page">
+		<div class="container">
+			<div class="row">
+				<div class="new">
+					<div class="form-container">
+						<div class="form-btn">
+							<span onclick="login()">Login</span>
+							<span onclick="register()">Register</span>
+							<hr id="Indicator">
+						</div>
+						<form id="LoginForm">
+							<input type="email" placeholder="email" class="email" required> 
+							<input type="password" placeholder="Password" class="password" required> 
+							<div style="display: flex;align-items: center;">
+							<input type="checkbox" checked="checked" name="" style="width: 15px;height: 15px;margin: 5px 5px;"><div style="font-size: 12px;display: inline-block;">Remember password</div>
+							</div>
+							<button type="submit" class="btn"><a href="index.html" style="font-size: 18px;">Login</a></button>
+							<a href="index.html" style="color:black">Forgot Password ?</a>
+						</form>
+						<form id="RegForm">
+							<input type="text" placeholder="Username" class="name" required> 
+							<input type="email" placeholder="email" class="email" required>
+							<input type="password" placeholder="Password" class="password" required> 
+							<button type="submit" class="btn"><a href="payment.html" style="font-size: 18px;">Register</a></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!--------footer---------->	
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-7">
+					<h3>Download our App</h3>
+					<p>Available for Android and iOS</p>
+					<div class="app-logo">
+						<img src="app1.png">
+						<img src="app2.png" style="padding-bottom: 7px;">
+					</div>
+				</div>
+				<div class="col-8">
+					<a href="" style="color:white;">YourOutfit</a>
+					<p>	
+						Our Purpose is to provide maximum accessibility and usability to our visitors.
+					</p>
+				</div>
+				<div class="col-9">
+					<h3>Useful links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog post</li>
+						<li>Return Policy</li>
+						<li>Join affiliate</li>
+					</ul>
+				</div>
+				<div class="col-10">
+					<h3>Follow us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Twitter</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">
+				Copyright 2022 - YourOutfit Inc.
+			</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		var MenuItems=document.getElementById("MenuItems");
+		
+		MenuItems.style.maxHeight="0px";
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeight=="0px")
+			{
+				MenuItems.style.maxHeight="200px";
+			}
+			else
+			{
+				MenuItems.style.maxHeight="0px";
+			}
+		}
+	</script>
+
+	<!---------js for toggle form--------->
+	<script type="text/javascript">
+		var LoginForm = document.getElementById("LoginForm");
+		var RegForm = document.getElementById("RegForm");
+		var Indicator = document.getElementById("Indicator");
+
+			function register() {
+				
+				RegForm.style.transform = "translateX(0px)";
+				LoginForm.style.transform = "translateX(0px)"
+				Indicator.style.transform = "translateX(100px)"
+			}
+			function login() {
+				
+				RegForm.style.transform = "translateX(300px)";
+				LoginForm.style.transform = "translateX(300px)"
+				Indicator.style.transform = "translateX(0px)"
+			}
+
+		
+
+
+			
+	</script>
+
+
+</body>
+</html>
+
